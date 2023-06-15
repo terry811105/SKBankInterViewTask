@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2550718BAB530CF0812AB6C1 /* Pods_SKBankInterviewTask_SKBankInterviewTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65070F0F7F4AB9CBAE01A26F /* Pods_SKBankInterviewTask_SKBankInterviewTaskUITests.framework */; };
+		59D1F9512A3A1A8400E3212B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9502A3A1A8400E3212B /* AppDelegate.swift */; };
+		59D1F9552A3A1A8400E3212B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9542A3A1A8400E3212B /* ViewController.swift */; };
+		59D1F95A2A3A1A8500E3212B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D1F9592A3A1A8500E3212B /* Assets.xcassets */; };
+		59D1F95D2A3A1A8500E3212B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D1F95B2A3A1A8500E3212B /* LaunchScreen.storyboard */; };
+		59D1F9682A3A1A8500E3212B /* SKBankInterviewTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9672A3A1A8500E3212B /* SKBankInterviewTaskTests.swift */; };
+		59D1F9722A3A1A8500E3212B /* SKBankInterviewTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9712A3A1A8500E3212B /* SKBankInterviewTaskUITests.swift */; };
+		59D1F9742A3A1A8500E3212B /* SKBankInterviewTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9732A3A1A8500E3212B /* SKBankInterviewTaskUITestsLaunchTests.swift */; };
+		71A8ADD26C945B538153D5FB /* Pods_SKBankInterviewTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA75B7201DE8D843621EFFB1 /* Pods_SKBankInterviewTaskTests.framework */; };
+		9BF34F479E4FE4FEDB2D4E27 /* Pods_SKBankInterviewTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B898F5BF97B5A55C4A7A616 /* Pods_SKBankInterviewTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59D1F9642A3A1A8500E3212B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D1F9452A3A1A8400E3212B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59D1F94C2A3A1A8400E3212B;
+			remoteInfo = SKBankInterviewTask;
+		};
+		59D1F96E2A3A1A8500E3212B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D1F9452A3A1A8400E3212B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59D1F94C2A3A1A8400E3212B;
+			remoteInfo = SKBankInterviewTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59D1F94D2A3A1A8400E3212B /* SKBankInterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKBankInterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D1F9502A3A1A8400E3212B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59D1F9542A3A1A8400E3212B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59D1F9592A3A1A8500E3212B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59D1F95C2A3A1A8500E3212B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59D1F95E2A3A1A8500E3212B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D1F9632A3A1A8500E3212B /* SKBankInterviewTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKBankInterviewTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D1F9672A3A1A8500E3212B /* SKBankInterviewTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBankInterviewTaskTests.swift; sourceTree = "<group>"; };
+		59D1F96D2A3A1A8500E3212B /* SKBankInterviewTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKBankInterviewTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D1F9712A3A1A8500E3212B /* SKBankInterviewTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBankInterviewTaskUITests.swift; sourceTree = "<group>"; };
+		59D1F9732A3A1A8500E3212B /* SKBankInterviewTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBankInterviewTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5B898F5BF97B5A55C4A7A616 /* Pods_SKBankInterviewTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKBankInterviewTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60960677D1ADF3A381054E6B /* Pods-SKBankInterviewTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKBankInterviewTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SKBankInterviewTaskTests/Pods-SKBankInterviewTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		65070F0F7F4AB9CBAE01A26F /* Pods_SKBankInterviewTask_SKBankInterviewTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKBankInterviewTask_SKBankInterviewTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7969D3A58A06C62DE5621323 /* Pods-SKBankInterviewTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKBankInterviewTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-SKBankInterviewTaskTests/Pods-SKBankInterviewTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C41EEB45B969E48A35F5433 /* Pods-SKBankInterviewTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKBankInterviewTask.debug.xcconfig"; path = "Target Support Files/Pods-SKBankInterviewTask/Pods-SKBankInterviewTask.debug.xcconfig"; sourceTree = "<group>"; };
+		A52E574B05C556003634AFA3 /* Pods-SKBankInterviewTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKBankInterviewTask.release.xcconfig"; path = "Target Support Files/Pods-SKBankInterviewTask/Pods-SKBankInterviewTask.release.xcconfig"; sourceTree = "<group>"; };
+		BA75B7201DE8D843621EFFB1 /* Pods_SKBankInterviewTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKBankInterviewTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D153726BBC53600A96FF524F /* Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7A0A622965E5A4DBDF95BFB /* Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59D1F94A2A3A1A8400E3212B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF34F479E4FE4FEDB2D4E27 /* Pods_SKBankInterviewTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D1F9602A3A1A8500E3212B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A8ADD26C945B538153D5FB /* Pods_SKBankInterviewTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D1F96A2A3A1A8500E3212B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2550718BAB530CF0812AB6C1 /* Pods_SKBankInterviewTask_SKBankInterviewTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59D1F9442A3A1A8400E3212B = {
+			isa = PBXGroup;
+			children = (
+				59D1F94F2A3A1A8400E3212B /* SKBankInterviewTask */,
+				59D1F9662A3A1A8500E3212B /* SKBankInterviewTaskTests */,
+				59D1F9702A3A1A8500E3212B /* SKBankInterviewTaskUITests */,
+				59D1F94E2A3A1A8400E3212B /* Products */,
+				D765BADB7D5E52D737EB9E81 /* Pods */,
+				F1CDF28245B54DBDA042B294 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59D1F94E2A3A1A8400E3212B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59D1F94D2A3A1A8400E3212B /* SKBankInterviewTask.app */,
+				59D1F9632A3A1A8500E3212B /* SKBankInterviewTaskTests.xctest */,
+				59D1F96D2A3A1A8500E3212B /* SKBankInterviewTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59D1F94F2A3A1A8400E3212B /* SKBankInterviewTask */ = {
+			isa = PBXGroup;
+			children = (
+				59D1F9502A3A1A8400E3212B /* AppDelegate.swift */,
+				59D1F9542A3A1A8400E3212B /* ViewController.swift */,
+				59D1F9592A3A1A8500E3212B /* Assets.xcassets */,
+				59D1F95B2A3A1A8500E3212B /* LaunchScreen.storyboard */,
+				59D1F95E2A3A1A8500E3212B /* Info.plist */,
+			);
+			path = SKBankInterviewTask;
+			sourceTree = "<group>";
+		};
+		59D1F9662A3A1A8500E3212B /* SKBankInterviewTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				59D1F9672A3A1A8500E3212B /* SKBankInterviewTaskTests.swift */,
+			);
+			path = SKBankInterviewTaskTests;
+			sourceTree = "<group>";
+		};
+		59D1F9702A3A1A8500E3212B /* SKBankInterviewTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59D1F9712A3A1A8500E3212B /* SKBankInterviewTaskUITests.swift */,
+				59D1F9732A3A1A8500E3212B /* SKBankInterviewTaskUITestsLaunchTests.swift */,
+			);
+			path = SKBankInterviewTaskUITests;
+			sourceTree = "<group>";
+		};
+		D765BADB7D5E52D737EB9E81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C41EEB45B969E48A35F5433 /* Pods-SKBankInterviewTask.debug.xcconfig */,
+				A52E574B05C556003634AFA3 /* Pods-SKBankInterviewTask.release.xcconfig */,
+				E7A0A622965E5A4DBDF95BFB /* Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.debug.xcconfig */,
+				D153726BBC53600A96FF524F /* Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.release.xcconfig */,
+				7969D3A58A06C62DE5621323 /* Pods-SKBankInterviewTaskTests.debug.xcconfig */,
+				60960677D1ADF3A381054E6B /* Pods-SKBankInterviewTaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1CDF28245B54DBDA042B294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B898F5BF97B5A55C4A7A616 /* Pods_SKBankInterviewTask.framework */,
+				65070F0F7F4AB9CBAE01A26F /* Pods_SKBankInterviewTask_SKBankInterviewTaskUITests.framework */,
+				BA75B7201DE8D843621EFFB1 /* Pods_SKBankInterviewTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59D1F94C2A3A1A8400E3212B /* SKBankInterviewTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D1F9772A3A1A8500E3212B /* Build configuration list for PBXNativeTarget "SKBankInterviewTask" */;
+			buildPhases = (
+				DC789F9E0018867BDFD1D07A /* [CP] Check Pods Manifest.lock */,
+				59D1F9492A3A1A8400E3212B /* Sources */,
+				59D1F94A2A3A1A8400E3212B /* Frameworks */,
+				59D1F94B2A3A1A8400E3212B /* Resources */,
+				9C977DD2C6A17BD617A9B729 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKBankInterviewTask;
+			productName = SKBankInterviewTask;
+			productReference = 59D1F94D2A3A1A8400E3212B /* SKBankInterviewTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59D1F9622A3A1A8500E3212B /* SKBankInterviewTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D1F97A2A3A1A8500E3212B /* Build configuration list for PBXNativeTarget "SKBankInterviewTaskTests" */;
+			buildPhases = (
+				B6A4214C231D05A65088DD94 /* [CP] Check Pods Manifest.lock */,
+				59D1F95F2A3A1A8500E3212B /* Sources */,
+				59D1F9602A3A1A8500E3212B /* Frameworks */,
+				59D1F9612A3A1A8500E3212B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D1F9652A3A1A8500E3212B /* PBXTargetDependency */,
+			);
+			name = SKBankInterviewTaskTests;
+			productName = SKBankInterviewTaskTests;
+			productReference = 59D1F9632A3A1A8500E3212B /* SKBankInterviewTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59D1F96C2A3A1A8500E3212B /* SKBankInterviewTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D1F97D2A3A1A8500E3212B /* Build configuration list for PBXNativeTarget "SKBankInterviewTaskUITests" */;
+			buildPhases = (
+				C3027E413839F56F808D5C54 /* [CP] Check Pods Manifest.lock */,
+				59D1F9692A3A1A8500E3212B /* Sources */,
+				59D1F96A2A3A1A8500E3212B /* Frameworks */,
+				59D1F96B2A3A1A8500E3212B /* Resources */,
+				A1C1E337B39831A46AC28F87 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D1F96F2A3A1A8500E3212B /* PBXTargetDependency */,
+			);
+			name = SKBankInterviewTaskUITests;
+			productName = SKBankInterviewTaskUITests;
+			productReference = 59D1F96D2A3A1A8500E3212B /* SKBankInterviewTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59D1F9452A3A1A8400E3212B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					59D1F94C2A3A1A8400E3212B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					59D1F9622A3A1A8500E3212B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 59D1F94C2A3A1A8400E3212B;
+					};
+					59D1F96C2A3A1A8500E3212B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 59D1F94C2A3A1A8400E3212B;
+					};
+				};
+			};
+			buildConfigurationList = 59D1F9482A3A1A8400E3212B /* Build configuration list for PBXProject "SKBankInterviewTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59D1F9442A3A1A8400E3212B;
+			productRefGroup = 59D1F94E2A3A1A8400E3212B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59D1F94C2A3A1A8400E3212B /* SKBankInterviewTask */,
+				59D1F9622A3A1A8500E3212B /* SKBankInterviewTaskTests */,
+				59D1F96C2A3A1A8500E3212B /* SKBankInterviewTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59D1F94B2A3A1A8400E3212B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D1F95D2A3A1A8500E3212B /* LaunchScreen.storyboard in Resources */,
+				59D1F95A2A3A1A8500E3212B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D1F9612A3A1A8500E3212B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D1F96B2A3A1A8500E3212B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C977DD2C6A17BD617A9B729 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SKBankInterviewTask/Pods-SKBankInterviewTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SKBankInterviewTask/Pods-SKBankInterviewTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SKBankInterviewTask/Pods-SKBankInterviewTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1C1E337B39831A46AC28F87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6A4214C231D05A65088DD94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKBankInterviewTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3027E413839F56F808D5C54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKBankInterviewTask-SKBankInterviewTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC789F9E0018867BDFD1D07A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKBankInterviewTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59D1F9492A3A1A8400E3212B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D1F9552A3A1A8400E3212B /* ViewController.swift in Sources */,
+				59D1F9512A3A1A8400E3212B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D1F95F2A3A1A8500E3212B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D1F9682A3A1A8500E3212B /* SKBankInterviewTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D1F9692A3A1A8500E3212B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D1F9722A3A1A8500E3212B /* SKBankInterviewTaskUITests.swift in Sources */,
+				59D1F9742A3A1A8500E3212B /* SKBankInterviewTaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59D1F9652A3A1A8500E3212B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59D1F94C2A3A1A8400E3212B /* SKBankInterviewTask */;
+			targetProxy = 59D1F9642A3A1A8500E3212B /* PBXContainerItemProxy */;
+		};
+		59D1F96F2A3A1A8500E3212B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59D1F94C2A3A1A8400E3212B /* SKBankInterviewTask */;
+			targetProxy = 59D1F96E2A3A1A8500E3212B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59D1F95B2A3A1A8500E3212B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59D1F95C2A3A1A8500E3212B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59D1F9752A3A1A8500E3212B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59D1F9762A3A1A8500E3212B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59D1F9782A3A1A8500E3212B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C41EEB45B969E48A35F5433 /* Pods-SKBankInterviewTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FT88JC562X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SKBankInterviewTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = terry.SKBankInterviewTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		59D1F9792A3A1A8500E3212B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52E574B05C556003634AFA3 /* Pods-SKBankInterviewTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FT88JC562X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SKBankInterviewTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = terry.SKBankInterviewTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		59D1F97B2A3A1A8500E3212B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7969D3A58A06C62DE5621323 /* Pods-SKBankInterviewTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FT88JC562X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = terry.SKBankInterviewTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKBankInterviewTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SKBankInterviewTask";
+			};
+			name = Debug;
+		};
+		59D1F97C2A3A1A8500E3212B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60960677D1ADF3A381054E6B /* Pods-SKBankInterviewTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FT88JC562X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = terry.SKBankInterviewTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKBankInterviewTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SKBankInterviewTask";
+			};
+			name = Release;
+		};
+		59D1F97E2A3A1A8500E3212B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A0A622965E5A4DBDF95BFB /* Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FT88JC562X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = terry.SKBankInterviewTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SKBankInterviewTask;
+			};
+			name = Debug;
+		};
+		59D1F97F2A3A1A8500E3212B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D153726BBC53600A96FF524F /* Pods-SKBankInterviewTask-SKBankInterviewTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FT88JC562X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = terry.SKBankInterviewTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SKBankInterviewTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59D1F9482A3A1A8400E3212B /* Build configuration list for PBXProject "SKBankInterviewTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D1F9752A3A1A8500E3212B /* Debug */,
+				59D1F9762A3A1A8500E3212B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D1F9772A3A1A8500E3212B /* Build configuration list for PBXNativeTarget "SKBankInterviewTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D1F9782A3A1A8500E3212B /* Debug */,
+				59D1F9792A3A1A8500E3212B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D1F97A2A3A1A8500E3212B /* Build configuration list for PBXNativeTarget "SKBankInterviewTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D1F97B2A3A1A8500E3212B /* Debug */,
+				59D1F97C2A3A1A8500E3212B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D1F97D2A3A1A8500E3212B /* Build configuration list for PBXNativeTarget "SKBankInterviewTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D1F97E2A3A1A8500E3212B /* Debug */,
+				59D1F97F2A3A1A8500E3212B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59D1F9452A3A1A8400E3212B /* Project object */;
+}
