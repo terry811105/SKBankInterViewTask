@@ -1,0 +1,23 @@
+PODS:
+  - RxSwift (6.5.0)
+  - SteviaLayout (5.1.2)
+
+DEPENDENCIES:
+  - RxSwift
+  - SteviaLayout (from `/Users/zhangwenhuan/Stevia`)
+
+SPEC REPOS:
+  trunk:
+    - RxSwift
+
+EXTERNAL SOURCES:
+  SteviaLayout:
+    :path: "/Users/zhangwenhuan/Stevia"
+
+SPEC CHECKSUMS:
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
+
+PODFILE CHECKSUM: 8c94d64644aebc897843c9029a549fe9c9010471
+
+COCOAPODS: 1.12.1

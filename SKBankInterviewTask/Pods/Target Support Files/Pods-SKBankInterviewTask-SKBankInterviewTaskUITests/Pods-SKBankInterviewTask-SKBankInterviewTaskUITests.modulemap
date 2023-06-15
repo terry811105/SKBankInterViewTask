@@ -1,0 +1,6 @@
+framework module Pods_SKBankInterviewTask_SKBankInterviewTaskUITests {
+  umbrella header "Pods-SKBankInterviewTask-SKBankInterviewTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
