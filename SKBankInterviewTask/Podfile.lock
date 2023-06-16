@@ -1,23 +1,33 @@
 PODS:
+  - Alamofire (5.7.1)
   - RxSwift (6.5.0)
+  - SDWebImage (5.16.0):
+    - SDWebImage/Core (= 5.16.0)
+  - SDWebImage/Core (5.16.0)
   - SteviaLayout (5.1.2)
 
 DEPENDENCIES:
+  - Alamofire
   - RxSwift
+  - SDWebImage
   - SteviaLayout (from `/Users/zhangwenhuan/Stevia`)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - RxSwift
+    - SDWebImage
 
 EXTERNAL SOURCES:
   SteviaLayout:
     :path: "/Users/zhangwenhuan/Stevia"
 
 SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: 2aea163b50bfcb569a2726b6a754c54a4506fcf6
   SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
 
-PODFILE CHECKSUM: 8c94d64644aebc897843c9029a549fe9c9010471
+PODFILE CHECKSUM: d948e07ed269eb5ed330fb73a5c3ac5c24c60050
 
 COCOAPODS: 1.12.1

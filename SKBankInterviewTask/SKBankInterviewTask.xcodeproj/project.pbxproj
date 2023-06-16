@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2550718BAB530CF0812AB6C1 /* Pods_SKBankInterviewTask_SKBankInterviewTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65070F0F7F4AB9CBAE01A26F /* Pods_SKBankInterviewTask_SKBankInterviewTaskUITests.framework */; };
+		5934F2C72A3B429300DC7B58 /* APImanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2C62A3B429300DC7B58 /* APImanager.swift */; };
+		5934F2C82A3B718800DC7B58 /* APImanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2C62A3B429300DC7B58 /* APImanager.swift */; };
+		5934F2CA2A3B71CD00DC7B58 /* APIManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2C92A3B71CD00DC7B58 /* APIManagerTest.swift */; };
+		5934F2CC2A3C200700DC7B58 /* ZooParkInfoMadelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2CB2A3C200700DC7B58 /* ZooParkInfoMadelTest.swift */; };
+		5934F2CF2A3C2A5700DC7B58 /* ZooParkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2CE2A3C2A5700DC7B58 /* ZooParkInfo.swift */; };
+		5934F2D02A3C2A5700DC7B58 /* ZooParkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2CE2A3C2A5700DC7B58 /* ZooParkInfo.swift */; };
 		59D1F9512A3A1A8400E3212B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9502A3A1A8400E3212B /* AppDelegate.swift */; };
 		59D1F9552A3A1A8400E3212B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9542A3A1A8400E3212B /* ViewController.swift */; };
 		59D1F95A2A3A1A8500E3212B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D1F9592A3A1A8500E3212B /* Assets.xcassets */; };
@@ -37,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5934F2C62A3B429300DC7B58 /* APImanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APImanager.swift; sourceTree = "<group>"; };
+		5934F2C92A3B71CD00DC7B58 /* APIManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTest.swift; sourceTree = "<group>"; };
+		5934F2CB2A3C200700DC7B58 /* ZooParkInfoMadelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooParkInfoMadelTest.swift; sourceTree = "<group>"; };
+		5934F2CE2A3C2A5700DC7B58 /* ZooParkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooParkInfo.swift; sourceTree = "<group>"; };
 		59D1F94D2A3A1A8400E3212B /* SKBankInterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKBankInterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D1F9502A3A1A8400E3212B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D1F9542A3A1A8400E3212B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5934F2CD2A3C29B900DC7B58 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5934F2CE2A3C2A5700DC7B58 /* ZooParkInfo.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		59D1F9442A3A1A8400E3212B = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +130,10 @@
 		59D1F94F2A3A1A8400E3212B /* SKBankInterviewTask */ = {
 			isa = PBXGroup;
 			children = (
+				5934F2CD2A3C29B900DC7B58 /* DataModel */,
 				59D1F9502A3A1A8400E3212B /* AppDelegate.swift */,
 				59D1F9542A3A1A8400E3212B /* ViewController.swift */,
+				5934F2C62A3B429300DC7B58 /* APImanager.swift */,
 				59D1F9592A3A1A8500E3212B /* Assets.xcassets */,
 				59D1F95B2A3A1A8500E3212B /* LaunchScreen.storyboard */,
 				59D1F95E2A3A1A8500E3212B /* Info.plist */,
@@ -124,6 +144,8 @@
 		59D1F9662A3A1A8500E3212B /* SKBankInterviewTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				5934F2CB2A3C200700DC7B58 /* ZooParkInfoMadelTest.swift */,
+				5934F2C92A3B71CD00DC7B58 /* APIManagerTest.swift */,
 				59D1F9672A3A1A8500E3212B /* SKBankInterviewTaskTests.swift */,
 			);
 			path = SKBankInterviewTaskTests;
@@ -148,7 +170,6 @@
 				7969D3A58A06C62DE5621323 /* Pods-SKBankInterviewTaskTests.debug.xcconfig */,
 				60960677D1ADF3A381054E6B /* Pods-SKBankInterviewTaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -401,6 +422,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				59D1F9552A3A1A8400E3212B /* ViewController.swift in Sources */,
+				5934F2C72A3B429300DC7B58 /* APImanager.swift in Sources */,
+				5934F2CF2A3C2A5700DC7B58 /* ZooParkInfo.swift in Sources */,
 				59D1F9512A3A1A8400E3212B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +432,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5934F2D02A3C2A5700DC7B58 /* ZooParkInfo.swift in Sources */,
+				5934F2C82A3B718800DC7B58 /* APImanager.swift in Sources */,
 				59D1F9682A3A1A8500E3212B /* SKBankInterviewTaskTests.swift in Sources */,
+				5934F2CC2A3C200700DC7B58 /* ZooParkInfoMadelTest.swift in Sources */,
+				5934F2CA2A3B71CD00DC7B58 /* APIManagerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

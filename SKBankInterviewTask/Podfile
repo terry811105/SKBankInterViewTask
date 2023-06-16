@@ -8,6 +8,8 @@ target 'SKBankInterviewTask' do
   # Pods for SKBankInterviewTask
   pod 'SteviaLayout', :path => '/Users/zhangwenhuan/Stevia'
   pod 'RxSwift'
+  pod "Alamofire"
+  pod "SDWebImage"
 
   target 'SKBankInterviewTaskTests' do
     inherit! :search_paths
