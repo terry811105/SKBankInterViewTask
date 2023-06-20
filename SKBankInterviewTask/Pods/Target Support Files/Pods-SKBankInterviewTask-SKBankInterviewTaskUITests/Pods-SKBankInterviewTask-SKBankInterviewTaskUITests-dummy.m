@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SKBankInterviewTask_SKBankInterviewTaskUITests : NSObject
+@end
+@implementation PodsDummy_Pods_SKBankInterviewTask_SKBankInterviewTaskUITests
+@end
