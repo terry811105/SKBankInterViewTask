@@ -12,51 +12,8 @@ import RxSwift
 import RxDataSources
 import SafariServices
 
-struct SectionOfCustomData {
-    var header: String
-    var items: [Item]
-}
-extension SectionOfCustomData: SectionModelType {
-    typealias Item = ZooInfo
-    
-    init(original: SectionOfCustomData, items: [Item]) {
-        self = original
-        self.items = items
-    }
-}
-
+/// 園區簡介詳細頁+該區植物列表
 class ZooParkInfoDetailViewController: UIViewController {
-    
-    private lazy var imageView: UIImageView = {
-        let img = UIImageView()
-        img.contentMode = .scaleAspectFill
-        img.clipsToBounds = true
-        return img
-    }()
-    
-    private lazy var descriptionLabel: UILabel = {
-        let lb = UILabel()
-        lb.numberOfLines = 0
-        return lb
-    }()
-    
-    private lazy var categoryLabel: UILabel = {
-        let lb = UILabel()
-        
-        return lb
-    }()
-    
-    private lazy var memoLabel: UILabel = {
-        let lb = UILabel()
-        
-        return lb
-    }()
-    
-    private lazy var openWebButton: UIButton = {
-        let btn = UIButton()
-        
-        return btn
-    }()
     
     private lazy var tableView: UITableView = {
         let table = UITableView()
@@ -133,23 +90,19 @@ class ZooParkInfoDetailViewController: UIViewController {
         
         Observable.combineLatest(viewModel.parkInfoRelay.asObservable(), viewModel.plantsInfoRelay.asObservable())
             .map { (parkInfo, plantsInfo) -> [SectionOfCustomData] in
-                let parkPlants: [ZooPlantInfo] = plantsInfo.filter { plant in
-                    let components: [String] = plant.location.components(separatedBy: "；")
-                    return components.contains(parkInfo.name)
-                }
                 
                 return [
                     SectionOfCustomData(header: "園區簡介", items: [parkInfo]),
-                    SectionOfCustomData(header: "園區植物", items: parkPlants)
+                    SectionOfCustomData(header: "園區植物", items: plantsInfo)
                 ]
             }
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
         
         Observable.zip(tableView.rx.modelSelected(ZooPlantInfo.self), tableView.rx.itemSelected)
-            .subscribe(onNext: { [unowned self] (info, index) in
-                print("Selected cell at indexPath: \(index.row), info: \(info.﻿name)")
-                
+            .subscribe(onNext: { [weak self] (info, index) in
+                let vc = ZooPlantDetailViewController(model: info)
+                self?.navigationController?.pushViewController(vc, animated: true)
             })
             .disposed(by: disposeBag)
         

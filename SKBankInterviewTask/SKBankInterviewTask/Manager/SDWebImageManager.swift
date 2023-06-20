@@ -24,8 +24,8 @@ class SDWebImageManager {
         }
         
         if let image = imageCache.object(forKey: url as NSURL) {
+            // 檔案存在快取,直接取用
             imageView.image = image
-            print("檔案存在快取,直接取用, url: \(url.absoluteString)")
             return
         }
         

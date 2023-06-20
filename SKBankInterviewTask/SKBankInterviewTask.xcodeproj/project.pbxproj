@@ -28,6 +28,9 @@
 		5934F2ED2A40BA3E00DC7B58 /* ZooPlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2EC2A40BA3E00DC7B58 /* ZooPlantDetailViewController.swift */; };
 		5934F2EF2A415F4000DC7B58 /* ZooInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2EE2A415F4000DC7B58 /* ZooInfo.swift */; };
 		5934F2F02A415F5F00DC7B58 /* ZooInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2EE2A415F4000DC7B58 /* ZooInfo.swift */; };
+		5934F2F22A41E8CF00DC7B58 /* SectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2F12A41E8CF00DC7B58 /* SectionData.swift */; };
+		5934F2F42A41EC4600DC7B58 /* TitleComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2F32A41EC4600DC7B58 /* TitleComponentView.swift */; };
+		5934F2F72A41F39200DC7B58 /* DataCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F2F62A41F39200DC7B58 /* DataCacheManager.swift */; };
 		59D1F9512A3A1A8400E3212B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9502A3A1A8400E3212B /* AppDelegate.swift */; };
 		59D1F9552A3A1A8400E3212B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1F9542A3A1A8400E3212B /* ViewController.swift */; };
 		59D1F95A2A3A1A8500E3212B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D1F9592A3A1A8500E3212B /* Assets.xcassets */; };
@@ -73,6 +76,9 @@
 		5934F2EA2A40B98B00DC7B58 /* ZooPlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooPlantTableViewCell.swift; sourceTree = "<group>"; };
 		5934F2EC2A40BA3E00DC7B58 /* ZooPlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooPlantDetailViewController.swift; sourceTree = "<group>"; };
 		5934F2EE2A415F4000DC7B58 /* ZooInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooInfo.swift; sourceTree = "<group>"; };
+		5934F2F12A41E8CF00DC7B58 /* SectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionData.swift; sourceTree = "<group>"; };
+		5934F2F32A41EC4600DC7B58 /* TitleComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleComponentView.swift; sourceTree = "<group>"; };
+		5934F2F62A41F39200DC7B58 /* DataCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCacheManager.swift; sourceTree = "<group>"; };
 		59D1F94D2A3A1A8400E3212B /* SKBankInterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKBankInterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D1F9502A3A1A8400E3212B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D1F9542A3A1A8400E3212B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 				5934F2CE2A3C2A5700DC7B58 /* ZooParkInfo.swift */,
 				5934F2E32A4090D700DC7B58 /* ZooPlantInfo.swift */,
 				5934F2EE2A415F4000DC7B58 /* ZooInfo.swift */,
+				5934F2F12A41E8CF00DC7B58 /* SectionData.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 				5934F2DD2A3F2F4B00DC7B58 /* ZooParkInfoDetailViewController.swift */,
 				5934F2EC2A40BA3E00DC7B58 /* ZooPlantDetailViewController.swift */,
 				59D1F9542A3A1A8400E3212B /* ViewController.swift */,
+				5934F2F52A41EC4C00DC7B58 /* CustomView */,
 				5934F2D62A3CBE4400DC7B58 /* Cell */,
 			);
 			path = View;
@@ -176,8 +184,17 @@
 			children = (
 				5934F2C62A3B429300DC7B58 /* APImanager.swift */,
 				5934F2E12A407A1100DC7B58 /* SDWebImageManager.swift */,
+				5934F2F62A41F39200DC7B58 /* DataCacheManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		5934F2F52A41EC4C00DC7B58 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				5934F2F32A41EC4600DC7B58 /* TitleComponentView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		59D1F9442A3A1A8400E3212B = {
@@ -506,10 +523,13 @@
 				5934F2D52A3C960000DC7B58 /* MainViewModel.swift in Sources */,
 				5934F2E42A4090D700DC7B58 /* ZooPlantInfo.swift in Sources */,
 				59D1F9552A3A1A8400E3212B /* ViewController.swift in Sources */,
+				5934F2F42A41EC4600DC7B58 /* TitleComponentView.swift in Sources */,
 				5934F2DB2A3CBFF100DC7B58 /* UITableViewCellExtention.swift in Sources */,
 				5934F2DE2A3F2F4B00DC7B58 /* ZooParkInfoDetailViewController.swift in Sources */,
 				5934F2E02A3F313300DC7B58 /* ZooParkInfoDetailViewModel.swift in Sources */,
 				5934F2C72A3B429300DC7B58 /* APImanager.swift in Sources */,
+				5934F2F72A41F39200DC7B58 /* DataCacheManager.swift in Sources */,
+				5934F2F22A41E8CF00DC7B58 /* SectionData.swift in Sources */,
 				5934F2ED2A40BA3E00DC7B58 /* ZooPlantDetailViewController.swift in Sources */,
 				5934F2EB2A40B98B00DC7B58 /* ZooPlantTableViewCell.swift in Sources */,
 				5934F2CF2A3C2A5700DC7B58 /* ZooParkInfo.swift in Sources */,

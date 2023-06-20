@@ -12,8 +12,6 @@ import RxSwift
 
 class ViewController: UIViewController {
     
-    private lazy var label: UILabel = UILabel()
-    
     private lazy var refreshControl: UIRefreshControl = {
         let rf = UIRefreshControl()
         return rf
@@ -37,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     private func setupUI() {
-        navigationItem.title = "動物園"
+        navigationItem.title = "臺北市立動物園"
         view.backgroundColor = .white
         view.subviews(tableView)
         tableView.left(0).right(0).bottom(0)
@@ -48,28 +46,27 @@ class ViewController: UIViewController {
     
     private func bind() {
         refreshControl.beginRefreshing()
-        viewModel.startToBind { [weak self] in
-            self?.refreshControl.endRefreshing()
-        }
+        viewModel.startToBind()
+        
+        viewModel.refreshSubject
+            .subscribe(onNext: { [weak self] isStopRefresh in
+                if isStopRefresh {
+                    self?.refreshControl.endRefreshing()
+                }
+            })
+            .disposed(by: disposeBag)
         
         viewModel.tableViewObservable
             .bind(to: tableView.rx.items(cellIdentifier: ZooParkTableViewCell.reuseIdentifier(), cellType: ZooParkTableViewCell.self)) { [weak self] (row, element, cell) in
                 self?.configCell(cell: cell, model: element)
             }
             .disposed(by: disposeBag)
-//
-//        tableView.rx.willDisplayCell
-//            .subscribe(onNext: { [weak self] (cell, indexPath) in
-//                print("index display: \(indexPath.row)")
-//            })
-//            .disposed(by: disposeBag)
         
         Observable.zip(tableView.rx.modelSelected(ZooParkInfo.self), tableView.rx.itemSelected)
-            .subscribe(onNext: { [unowned self] (info, index) in
-                print("Selected cell at indexPath: \(index.row), info: \(info.name)")
+            .subscribe(onNext: { [weak self] (info, index) in
                 let vm = ZooParkInfoDetailViewModel(info: info)
                 let vc = ZooParkInfoDetailViewController(viewModel: vm)
-                self.navigationController?.pushViewController(vc, animated: true)
+                self?.navigationController?.pushViewController(vc, animated: true)
             })
             .disposed(by: disposeBag)
         

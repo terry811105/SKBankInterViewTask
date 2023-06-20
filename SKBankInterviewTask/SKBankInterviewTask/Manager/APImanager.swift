@@ -32,7 +32,7 @@ class APIManager {
                     completion(.success(nil))
                     return
                 }
-                var infos: [ZooParkInfo] = response.result.results.map { info in
+                let infos: [ZooParkInfo] = response.result.results.map { info in
                     let imgUrl = info.picUrl.replacingOccurrences(of: "http", with: "https")
                     let memo = info.memo.isEmpty ? "無休館資訊" : info.memo
                     return ZooParkInfo(id: info.id,

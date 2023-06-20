@@ -10,44 +10,22 @@ import RxCocoa
 
 class MainViewModel {
     
-    // input
-    let listObservable = BehaviorRelay<[ZooParkInfo]>(value: [])
-    
     // output
     let tableViewObservable = BehaviorRelay<[ZooParkInfo]>(value: [])
+    let refreshSubject = PublishSubject<Bool>()
     
-    
-    
-    func startToBind(completion: @escaping () -> Void) {
+    func startToBind() {
         APIManager.getTaipeiZooParkInfo { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let datas):
                 guard let datas = datas else { return }
                 self.tableViewObservable.accept(datas)
-                completion()
+                self.refreshSubject.onNext(true)
             case .failure(let error):
+                self.refreshSubject.onNext(true)
                 print("error: \(error.localizedDescription)")
-                // TODO: 錯誤處理
             }
-        }
-    }
-    
-    func refreshData() -> Observable<[ZooParkInfo]> {
-        return Observable.create { observer in
-            APIManager.getTaipeiZooParkInfo { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .success(let datas):
-                    guard let datas = datas else { return }
-                    self.tableViewObservable.accept(datas)
-                    observer.onNext(datas)
-                    observer.onCompleted()
-                case .failure(let error):
-                    observer.onError(error)
-                }
-            }
-            return Disposables.create()
         }
     }
     
