@@ -16,21 +16,21 @@ struct ZooParkInfoResult: Codable {
     let results: [ZooParkInfo]
 }
 
-struct ZooParkInfo: Codable {
+struct ZooParkInfo: Codable, ZooInfo {
     
-    let id: Int
+    var id: Int = 0
     
-    let category: String
+    var category: String = ""
     
-    let name: String
+    var name: String = ""
     
-    let picUrl: String
+    var picUrl: String = ""
     
-    let info: String
+    var info: String = ""
     
-    let memo: String
+    var memo: String = ""
     
-    let url: String
+    var url: String = ""
     
     enum CodingKeys: String, CodingKey {
         case id = "_id"
@@ -40,5 +40,19 @@ struct ZooParkInfo: Codable {
         case info = "e_info"
         case memo = "e_memo"
         case url = "e_url"
+    }
+    
+    init() {
+        
+    }
+    
+    init(id: Int, name: String, category: String, picUrl: String, info: String, memo: String, url: String) {
+        self.id = id
+        self.category = category
+        self.name = name
+        self.picUrl = picUrl
+        self.info = info
+        self.memo = memo
+        self.url = url
     }
 }

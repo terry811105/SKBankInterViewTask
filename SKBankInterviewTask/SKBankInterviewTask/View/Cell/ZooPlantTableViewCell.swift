@@ -12,7 +12,8 @@ class ZooPlantTableViewCell: UITableViewCell {
 
     lazy var plantImageView: UIImageView = {
         let img = UIImageView()
-        img.contentMode = .scaleAspectFit
+        img.contentMode = .scaleAspectFill
+        img.clipsToBounds = true
         return img
     }()
     
@@ -56,7 +57,15 @@ class ZooPlantTableViewCell: UITableViewCell {
     }
 
     private func setupUI() {
-        
-        
+        contentView.subviews(plantImageView)
+        plantImageView.top(20).left(16).bottom(20)
+        plantImageView.width(80).height(80)
+        contentView.subviews(titleLabel)
+        titleLabel.Bottom == plantImageView.CenterY - 10
+        titleLabel.Left == plantImageView.Right + 16
+        contentView.subviews(descriptionLabel)
+        descriptionLabel.Top == plantImageView.CenterY
+        descriptionLabel.Right == contentView.Right - 16
+        descriptionLabel.Left == titleLabel.Left
     }
 }

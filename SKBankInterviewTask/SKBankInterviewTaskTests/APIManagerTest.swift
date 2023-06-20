@@ -44,5 +44,31 @@ final class APIManagerTest: XCTestCase {
         wait(for: [expect], timeout: 5)
         
     }
+    
+    func testGetZooPlantInfo() {
+        
+        let expect = expectation(description: "GetZooPlantInfo")
+        
+        APIManager.getTaipeiZooPlantInfo { result in
+            switch result {
+            case .success(let infos):
+                guard let infos = infos else {
+                    XCTFail("error: data is nil")
+                    return
+                }
+                self.logger.debug("DEBUG info count: \(infos.count)")
+                infos.forEach { info in
+                    
+                    self.logger.log("zoo park info name: \(info.﻿name)")
+                }
+                expect.fulfill()
+            case .failure(let error):
+                XCTFail("error: \(error.localizedDescription)")
+            }
+        }
+        
+        wait(for: [expect], timeout: 5)
+        
+    }
 
 }

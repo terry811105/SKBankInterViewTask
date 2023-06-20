@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ZooPlantInfo: Codable {
+struct ZooPlantInfo: Codable, ZooInfo {
     let id: Int
     let ﻿name: String
     let summary: String

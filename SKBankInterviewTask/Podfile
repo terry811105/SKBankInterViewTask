@@ -9,6 +9,7 @@ target 'SKBankInterviewTask' do
   pod 'SteviaLayout', :path => '/Users/zhangwenhuan/Stevia'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources', '~> 5.0'
   pod "Alamofire"
   pod "SDWebImage"
 

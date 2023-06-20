@@ -67,7 +67,8 @@ class ViewController: UIViewController {
         Observable.zip(tableView.rx.modelSelected(ZooParkInfo.self), tableView.rx.itemSelected)
             .subscribe(onNext: { [unowned self] (info, index) in
                 print("Selected cell at indexPath: \(index.row), info: \(info.name)")
-                let vc = ZooParkInfoDetailViewController(info: info)
+                let vm = ZooParkInfoDetailViewModel(info: info)
+                let vc = ZooParkInfoDetailViewController(viewModel: vm)
                 self.navigationController?.pushViewController(vc, animated: true)
             })
             .disposed(by: disposeBag)
@@ -77,7 +78,7 @@ class ViewController: UIViewController {
     private func configCell(cell: ZooParkTableViewCell, model: ZooParkInfo) {
         cell.titleLabel.text = model.name
         cell.descriptionLabel.text = model.info
-        cell.memoLabel.text = model.memo.isEmpty ? "無休館資訊" : model.memo
+        cell.memoLabel.text = model.memo
         SDWebImageManager.shared.setImage(imageView: cell.parkImageView, imgUrl: model.picUrl)
         cell.accessoryType = .disclosureIndicator
     }

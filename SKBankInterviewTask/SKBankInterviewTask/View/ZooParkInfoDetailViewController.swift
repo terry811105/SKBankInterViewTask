@@ -7,6 +7,23 @@
 
 import UIKit
 import Stevia
+import RxCocoa
+import RxSwift
+import RxDataSources
+import SafariServices
+
+struct SectionOfCustomData {
+    var header: String
+    var items: [Item]
+}
+extension SectionOfCustomData: SectionModelType {
+    typealias Item = ZooInfo
+    
+    init(original: SectionOfCustomData, items: [Item]) {
+        self = original
+        self.items = items
+    }
+}
 
 class ZooParkInfoDetailViewController: UIViewController {
     
@@ -30,7 +47,7 @@ class ZooParkInfoDetailViewController: UIViewController {
     }()
     
     private lazy var memoLabel: UILabel = {
-         let lb = UILabel()
+        let lb = UILabel()
         
         return lb
     }()
@@ -48,44 +65,95 @@ class ZooParkInfoDetailViewController: UIViewController {
         return table
     }()
     
-    var viewModel: ZooParkInfoDetailViewModel
+    private var viewModel: ZooParkInfoDetailViewModel
+    
+    let disposeBag = DisposeBag()
     
     init(viewModel: ZooParkInfoDetailViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
-
+    
     @available(*, unavailable)
     required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        bind()
     }
     
-
     private func setupUI() {
         view.backgroundColor = .white
-        
-        view.subviews(imageView)
-        imageView.Top == view.safeAreaLayoutGuide.Top 
-        imageView.left(0).right(0)
-        imageView.height(200)
-        view.subviews(descriptionLabel)
-        descriptionLabel.Top == imageView.Bottom + 16
-        descriptionLabel.left(16).right(16)
-        
+        view.subviews(tableView)
+        tableView.fillContainer()
+        navigationItem.title = viewModel.model.name
     }
     
     func bind() {
-        let info = viewModel.model
-        navigationItem.title = info.name
-        descriptionLabel.text = info.info
-        memoLabel.text = info.memo
-        categoryLabel.text = info.category
-        SDWebImageManager.shared.setImage(imageView: imageView, imgUrl: info.picUrl)
+        
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionOfCustomData>(
+            configureCell: { dataSource, tableView, indexPath, item in
+                // 園區
+                if let zooParkInfo = item as? ZooParkInfo,
+                   let cell = tableView.dequeueReusableCell(withIdentifier: ZooParkDetailTableViewCell.reuseIdentifier(), for: indexPath) as? ZooParkDetailTableViewCell {
+                    SDWebImageManager.shared.setImage(imageView: cell.parkImageView, imgUrl: zooParkInfo.picUrl)
+                    cell.descriptionLabel.text = zooParkInfo.info
+                    cell.memoLabel.text = zooParkInfo.memo
+                    cell.categoryLabel.text = zooParkInfo.category
+                    cell.clickBtnAction = { [weak self] in
+                        guard let url = URL(string: zooParkInfo.url) else { return }
+                        let safari = SFSafariViewController(url: url)
+                        self?.present(safari, animated: true)
+                    }
+                    return cell
+                }
+                // 植物
+                if let plantInfo = item as? ZooPlantInfo,
+                   let cell = tableView.dequeueReusableCell(withIdentifier: ZooPlantTableViewCell.reuseIdentifier(), for: indexPath) as? ZooPlantTableViewCell {
+                    SDWebImageManager.shared.setImage(imageView: cell.plantImageView, imgUrl: plantInfo.pic01_URL)
+                    cell.titleLabel.text = plantInfo.﻿name
+                    cell.descriptionLabel.text = plantInfo.alsoKnown
+                    cell.accessoryType = .disclosureIndicator
+                    return cell
+                }
+                
+                return UITableViewCell()
+            }, titleForHeaderInSection: { datasource, section in
+                if section == 0 {
+                    return "園區簡介"
+                }
+                if section == 1 {
+                    return "園區植物"
+                }
+                return ""
+            })
+        
+        Observable.combineLatest(viewModel.parkInfoRelay.asObservable(), viewModel.plantsInfoRelay.asObservable())
+            .map { (parkInfo, plantsInfo) -> [SectionOfCustomData] in
+                let parkPlants: [ZooPlantInfo] = plantsInfo.filter { plant in
+                    let components: [String] = plant.location.components(separatedBy: "；")
+                    return components.contains(parkInfo.name)
+                }
+                
+                return [
+                    SectionOfCustomData(header: "園區簡介", items: [parkInfo]),
+                    SectionOfCustomData(header: "園區植物", items: parkPlants)
+                ]
+            }
+            .bind(to: tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+        
+        Observable.zip(tableView.rx.modelSelected(ZooPlantInfo.self), tableView.rx.itemSelected)
+            .subscribe(onNext: { [unowned self] (info, index) in
+                print("Selected cell at indexPath: \(index.row), info: \(info.﻿name)")
+                
+            })
+            .disposed(by: disposeBag)
+        
     }
-
+    
 }
+

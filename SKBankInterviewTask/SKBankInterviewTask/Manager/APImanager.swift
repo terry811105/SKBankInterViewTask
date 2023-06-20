@@ -34,12 +34,13 @@ class APIManager {
                 }
                 var infos: [ZooParkInfo] = response.result.results.map { info in
                     let imgUrl = info.picUrl.replacingOccurrences(of: "http", with: "https")
+                    let memo = info.memo.isEmpty ? "無休館資訊" : info.memo
                     return ZooParkInfo(id: info.id,
-                                       category: info.category,
                                        name: info.name,
+                                       category: info.category,
                                        picUrl: imgUrl,
                                        info: info.info,
-                                       memo: info.memo,
+                                       memo: memo,
                                        url: info.url)
                 }
                 

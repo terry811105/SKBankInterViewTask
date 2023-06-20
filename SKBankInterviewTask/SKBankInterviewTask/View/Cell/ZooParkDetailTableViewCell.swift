@@ -12,7 +12,7 @@ class ZooParkDetailTableViewCell: UITableViewCell {
     
     lazy var parkImageView: UIImageView = {
         let img = UIImageView()
-        img.contentMode = .scaleAspectFill
+        img.contentMode = .scaleAspectFit
         img.clipsToBounds = true
         return img
     }()
@@ -40,9 +40,14 @@ class ZooParkDetailTableViewCell: UITableViewCell {
     
     lazy var openWebButton: UIButton = {
         let btn = UIButton()
+        btn.setTitle("在網頁開啟", for: .normal)
+        btn.setTitleColor(.blue, for: .normal)
+        btn.titleLabel?.font = .systemFont(ofSize: 14)
         btn.addTarget(self, action: #selector(clickBtn), for: .touchUpInside)
         return btn
     }()
+    
+    var clickBtnAction: (() -> Void)?
     
     // MARK: - init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -57,8 +62,6 @@ class ZooParkDetailTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Internal
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         descriptionLabel.text = ""
@@ -67,17 +70,28 @@ class ZooParkDetailTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
+        
         contentView.subviews(parkImageView)
         parkImageView.top(0).left(0).right(0)
-        parkImageView.height(180)
+        parkImageView.height(250)
         contentView.subviews(descriptionLabel)
         descriptionLabel.Top == parkImageView.Bottom + 16
         descriptionLabel.left(16).right(16)
+        contentView.subviews(memoLabel)
+        memoLabel.Left == contentView.Left + 16
+        memoLabel.Top == descriptionLabel.Bottom + 10
+        contentView.subviews(categoryLabel)
+        categoryLabel.Top == memoLabel.Bottom + 2
+        categoryLabel.Left == memoLabel.Left
+        categoryLabel.Bottom == contentView.Bottom - 6
+        contentView.subviews(openWebButton)
+        openWebButton.Bottom == contentView.Bottom - 6
+        openWebButton.Right == contentView.Right - 16
         
     }
     
     @objc
     private func clickBtn() {
-        
+        clickBtnAction?()
     }
 }
